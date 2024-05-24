@@ -1,0 +1,24 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "export NODE_ENV=development && nodemon --ignore 'tmp/' --delay 3 server.js",
+    "start": "export NODE_ENV=production && node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stoqey/ib": "^1.3.21",
+    "express": "^4.19.2"
+  },
+  "type": "module",
+  "imports": {
+    "#src/*": "./*"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
